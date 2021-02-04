@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2,h3{
+    font-weight: lighter;
+}
+
+.App{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    position: absolute;
+}
+
+.container{
+    width: 50vw;
+    height: 80vh;
+    background: #1b1b1b;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 220%;
+    border-radius: 0 2rem 0 2rem;
+}
+.container-1{
+   display: grid;
+   justify-content: center;
+   padding: 3rem 0 0 0;
+    
+}
+.submitBtn{
+    padding: 2rem 2rem;
+    display: grid;
+    justify-content: center;
+}
+
+button{
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border: 3px solid white;
+    color: white;
+    background: transparent;
+    border-radius: 2px;
+    transition: all .5s ease;
+    cursor: pointer;
+    display: block;
+}
+button:hover{
+    background: white;
+    color: black;
+}
+.text-part{
+    padding-top: 1rem;
+}
+
+.search{
+    width: 30vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    padding: 0 1rem 0 1rem;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    align-content: center;
+    border-radius: 0 1rem 0 1rem;
+}
+p,h2,h3,h4, .image-icon{
+    display: grid;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .container-1{
+        width: 100%;
+    }
+    .search{
+        width: 100%;
+    }
+}
